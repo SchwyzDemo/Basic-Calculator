@@ -86,7 +86,6 @@ const previousTextElement = document.querySelector("[data-previous]");
 // calling an instance of the Calculator class
 const calculator = new Calculator(previousTextElement, currentTextElement);
 
-
 // adding event listeners to buttons
 numberButtons.forEach((button) => {
   button.addEventListener("click", () => {
