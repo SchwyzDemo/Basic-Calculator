@@ -17,7 +17,6 @@ body {
   opacity: 0.7;
 }
 
-
 .calculator__grid {
   display: grid;
   justify-content: center;
@@ -35,8 +34,18 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.calculator__grid button:hover {
+.calculator__grid button:not(.special):hover {
   background-color: rgba(0, 255, 0, 0.6);
+}
+
+.calculator__grid button.clear:hover {
+  background-color: rgba(248, 111, 3, 1);
+  color: white;
+}
+
+.calculator__grid button.delete:hover {
+  background-color: rgba(242, 76, 61, 1);
+  color: white;
 }
 
 .span__two {
@@ -67,7 +76,7 @@ body {
 
 /* adding media query for background image */
 @media screen and (max-width: 768px) {
-    body {
-      background-position: top;
-    }
+  body {
+    background-position: top;
   }
+}
